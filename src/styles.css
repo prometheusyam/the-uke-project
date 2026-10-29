@@ -1,0 +1,132 @@
+@import "tailwindcss" source("../");
+
+/* Brand colors and fonts. Change these to restyle the whole site. */
+@theme {
+  /* Taken from the logo: green #6cb29a, yellow #f5e769, outline teal. */
+  --color-cream: #fcfbf4;
+  --color-paper: #f3f1dc;
+  --color-ink: #143a38;
+  --color-ink-soft: #36524f;
+  --color-teal: #2b6d66;
+  --color-teal-dark: #1f554f;
+  --color-mint: #6cb29a;
+  --color-mint-light: #dcede4;
+  --color-sun: #f5e769;
+
+  /* Caladea is an open-source font drawn to match Cambria, the logo's typeface. */
+  --font-display: 'Caladea', Cambria, Georgia, serif;
+  --font-body: 'Atkinson Hyperlegible', 'Verdana', sans-serif;
+}
+
+/* Large, high-contrast base type for older readers. */
+html {
+  font-size: 19px;
+  scroll-behavior: smooth;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+body {
+  margin: 0;
+  background: var(--color-cream);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  line-height: 1.12;
+  letter-spacing: -0.01em;
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-sun);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+/* Subtle paper grain over the whole page. */
+.grain::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 60;
+  opacity: 0.06;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  min-height: 3.1rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 1.05rem;
+  text-decoration: none;
+  transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+}
+.btn:hover {
+  transform: translateY(-2px);
+}
+.btn:active {
+  transform: translateY(0);
+}
+.btn-primary {
+  background: var(--color-teal);
+  color: #fff;
+  box-shadow: 0 6px 0 var(--color-teal-dark);
+}
+.btn-primary:hover {
+  background: var(--color-teal-dark);
+}
+.btn-ghost {
+  color: var(--color-ink);
+  border: 2px solid var(--color-ink);
+}
+.btn-ghost:hover {
+  background: var(--color-ink);
+  color: var(--color-cream);
+}
+
+/* Hand-drawn style underline for highlighted words. */
+.scribble {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 12' preserveAspectRatio='none'%3E%3Cpath d='M2 8 C 50 2, 90 12, 130 5 S 190 6, 198 4' fill='none' stroke='%236cb29a' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: 100% 0.4em;
+  background-position: 0 100%;
+  padding-bottom: 0.08em;
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.rise {
+  animation: rise 0.8s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
