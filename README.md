@@ -1,6 +1,6 @@
 # The Uke Project
 
-The website for The Uke Project, a small business that teaches ukulele classes to residents of retirement homes and senior communities. It has five pages (Home, About, The Program, FAQ, and Contact) and an inquiry form so activities directors, residents, and families can get in touch.
+The website for The Uke Project, a small business that teaches ukulele classes to residents of retirement homes and senior communities. It has four pages (Home, About, The Program, and The Research) and an inquiry form so activities directors, residents, and families can get in touch.
 
 ## Technologies
 
