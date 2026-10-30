@@ -18,6 +18,10 @@ export const Route = createRootRoute({
         content: 'width=device-width, initial-scale=1',
       },
       {
+        name: 'google-site-verification',
+        content: '<meta name="google-site-verification" content="BFRxHsVP4bNeAO3_SGfLjk4_WafJ3_J5NZr3nJPF1MU" />',
+      },
+      {
         title: siteName,
       },
       {
