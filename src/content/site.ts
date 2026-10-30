@@ -7,9 +7,8 @@ export const site = {
   description:
     'Turnkey, interactive group ukulele programs designed specifically for senior living communities and 55+ residences across Durham Region and Scarborough.',
   instructor: 'James Walsh, B.Mus',
-  // PLACEHOLDER: replace with the real email and phone number.
-  email: 'hello@theukeproject.com',
-  phone: '(555) 014-2286',
+  email: 'info@theukeproject.ca',
+  phone: '(647) 282-9209',
   serviceArea: 'Serving Durham Region and Scarborough',
 }
 

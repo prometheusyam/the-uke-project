@@ -24,13 +24,13 @@ function Research() {
 
       <section className="mx-auto mt-10 max-w-6xl px-5">
         <img
-          src={img('park-group.jpg', 1400)}
-          srcSet={`${img('park-group.jpg', 800)} 800w, ${img('park-group.jpg', 1400)} 1400w`}
+          src={img('park-group.png', 1400)}
+          srcSet={`${img('park-group.png', 800)} 800w, ${img('park-group.png', 1400)} 1400w`}
           sizes="(min-width: 1152px) 1152px, 100vw"
           alt="A group of smiling older adults playing ukuleles together outdoors in a sunny park."
-          width={1408}
-          height={768}
-          className="aspect-[2/1] w-full rounded-[2rem] border-8 border-white object-cover shadow-[0_20px_50px_-20px_rgba(20,58,56,0.45)] md:aspect-[5/2]"
+          width={1536}
+          height={1024}
+          className="aspect-[2/1] w-full rounded-[2rem] border-8 border-white object-cover object-[center_30%] shadow-[0_20px_50px_-20px_rgba(20,58,56,0.45)] md:aspect-[5/2]"
         />
       </section>
 
