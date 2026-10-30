@@ -1,17 +1,21 @@
 import { defineConfig } from 'vite'
-import { tanstackStart } from '@tanstack/react-start/plugin/vite'
-import viteReact from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 import netlify from '@netlify/vite-plugin-tanstack-start'
+import Sitemap from 'vite-plugin-sitemap'
 
-const config = defineConfig({
+export default defineConfig({
   resolve: { tsconfigPaths: true },
   plugins: [
     tailwindcss(),
     netlify(),
-    tanstackStart(),
-    viteReact(),
+    Sitemap({
+      hostname: 'https://theukeproject.ca',
+      dynamicRoutes: [
+        '/',
+        '/program',
+        '/research',
+        '/about',
+      ],
+    }),
   ],
 })
-
-export default config
