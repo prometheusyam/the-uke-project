@@ -10,6 +10,7 @@ export default defineConfig({
     netlify(),
     Sitemap({
       hostname: 'https://theukeproject.ca',
+      generateRobotsTxt: false,
       dynamicRoutes: [
         '/',
         '/program',
