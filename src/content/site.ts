@@ -33,9 +33,9 @@ export const home = {
   primaryCta: 'Get in touch',
   secondaryCta: 'See how the program works',
 stats: [
-  { value: '20', label: 'concert ukuleles brought to every session' },
-  { value: '3\u20114', label: 'chords learned in the very first session' },
-  { value: '20+', label: 'years of experience in music education' },
+  { value: '20', label: 'Concert ukuleles brought to every session' },
+  { value: '3\u20114', label: 'Chords learned in your very first session' },
+  { value: '20+', label: 'Years of teaching music education' },
 ],
   active: {
     heading: 'Active Music-Making instead of Passive Entertainment',
