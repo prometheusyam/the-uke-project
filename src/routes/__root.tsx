@@ -7,6 +7,40 @@ import '../styles.css'
 const siteName = `${site.name} | ${site.tagline}`
 const siteDescription = site.description
 
+const jsonLdData = {
+  '@context': 'https://schema.org',
+  '@type': 'EducationalOrganization',
+  '@id': 'https://theukeproject.ca/#organization',
+  name: site.name,
+  url: 'https://theukeproject.ca',
+  description: siteDescription,
+  areaServed: {
+    '@type': 'AdministrativeArea',
+    name: 'Ontario',
+  },
+  knowsAbout: [
+    'Ukulele Music Education',
+    'Cognitive Wellness for Seniors',
+    'Active Aging Programs',
+    'Research-Backed Music Therapy',
+  ],
+  hasOfferCatalog: {
+    '@type': 'OfferCatalog',
+    name: 'Senior Music Programs',
+    itemListElement: [
+      {
+        '@type': 'Offer',
+        itemOffered: {
+          '@type': 'Service',
+          name: 'Senior Community Ukulele Workshops',
+          description:
+            'Interactive, research-backed ukulele sessions designed to enhance cognitive health, motor skills, and social connection for older adults.',
+        },
+      },
+    ],
+  },
+}
+
 export const Route = createRootRoute({
   head: () => ({
     meta: [
@@ -52,6 +86,12 @@ export const Route = createRootRoute({
       {
         rel: 'stylesheet',
         href: 'https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Caladea:ital,wght@0,400;0,700;1,400&display=swap',
+      },
+    ],
+    scripts: [
+      {
+        type: 'application/ld+json',
+        children: JSON.stringify(jsonLdData),
       },
     ],
   }),
