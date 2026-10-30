@@ -55,7 +55,7 @@ export const program = {
   intro: 'A ukulele club that meets once a week to learn classic songs.',
   points: [
     'We bring up to 20 fully tuned high-quality concert ukuleles',
-    'Completely hassle-free for your staff—we handle 100% of the program setup, facilitation, and pack-up.',
+    'Completely hassle-free for your staff—we handle 100% of the program setup, facilitation, and pack-up',
     'Within a few minutes members are playing chords and learning to strum along to some of their favourite songs',
     'There’s no sheet music, no complicated theory, and chord shapes are projected at the front of the class next to the instructor',
     'Each session is 45 minutes of directed learning followed by 15 minutes of jamming, one-to-one help, and socializing',
