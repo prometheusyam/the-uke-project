@@ -9,7 +9,7 @@ export const site = {
   instructor: 'James Walsh, B.Mus',
   email: 'info@theukeproject.ca',
   phone: '(647) 282-9209',
-  serviceArea: 'Serving Durham Region and Scarborough',
+  serviceArea: 'Serving Durham Region, Scarborough, and surrounding areas.',
 }
 
 // Images are served through the Netlify Image CDN at the requested width.
