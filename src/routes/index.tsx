@@ -47,18 +47,18 @@ function Home() {
         </div>
       </section>
 
-      {/* Quick facts strip */}
-      <section aria-label="Program at a glance" className="bg-ink text-cream">
-        <dl className="mx-auto grid max-w-6xl gap-6 px-5 py-10 sm:grid-cols-3">
-          {home.stats.map((s) => (
-            <div key={s.label} className="flex items-baseline gap-3">
-              <dt className="sr-only">{s.label}</dt>
-              <dd className="font-display text-6xl font-semibold text-sun">{s.value}</dd>
-              <dd className="text-lg text-cream/85">{s.label}</dd>
-            </div>
-          ))}
-        </dl>
-      </section>
+{/* Quick facts strip */}
+<section aria-label="Program at a glance" className="bg-ink text-cream">
+  <dl className="mx-auto grid max-w-6xl gap-8 px-5 py-10 sm:grid-cols-3">
+    {home.stats.map((s) => (
+      <div key={s.label} className="flex items-center gap-4">
+        <dt className="sr-only">{s.label}</dt>
+        <dd className="font-display text-5xl font-semibold text-sun shrink-0 md:text-6xl">{s.value}</dd>
+        <dd className="text-lg leading-snug text-cream/85">{s.label}</dd>
+      </div>
+    ))}
+  </dl>
+</section>
 
       {/* Active music-making, beside a second image */}
       <section className="mx-auto mt-24 grid max-w-6xl gap-14 px-5 md:grid-cols-[0.9fr_1.1fr] md:items-center">
