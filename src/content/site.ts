@@ -45,7 +45,7 @@ export const home = {
     ],
   },
   course: [
-    'Our weekly course brings the ukuleles, hand-picked music from the 50s, 60s, and 70s, and an instructor with more than 20 years of experience in music education. Students will leave knowing 3-4 chords and 1-2 songs after just one session!',
+    'Our weekly program brings the ukuleles, hand-picked music from the 50s, 60s, and 70s, and an instructor with more than 20 years of experience in music education. Students will leave knowing 3-4 chords and 1-2 songs after just one session!',
     'Large laminated chord sheets are left behind with the organizers each week for members to practice with. Over time your organization can build their own unique songbook, including variations for members looking for an extra challenge!',
   ],
 }
@@ -55,6 +55,7 @@ export const program = {
   intro: 'A ukulele club that meets once a week to learn classic songs.',
   points: [
     'We bring up to 20 fully tuned high-quality concert ukuleles',
+    'Completely hassle-free for your staff—we handle 100% of the program setup, facilitation, and pack-up.',
     'Within a few minutes members are playing chords and learning to strum along to some of their favourite songs',
     'There’s no sheet music, no complicated theory, and chord shapes are projected at the front of the class next to the instructor',
     'Each session is 45 minutes of directed learning followed by 15 minutes of jamming, one-to-one help, and socializing',
