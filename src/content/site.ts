@@ -32,11 +32,11 @@ export const home = {
     'Turnkey, interactive group ukulele programs designed specifically for senior living communities and 55+ residences across Durham Region and Scarborough.',
   primaryCta: 'Get in touch',
   secondaryCta: 'See how the program works',
-  stats: [
-    { value: '20', label: 'concert ukuleles brought to every session' },
-    { value: '3–4', label: 'chords learned in the very first session' },
-    { value: '20+', label: 'years of experience in music education' },
-  ],
+stats: [
+  { number: "20", label: "concert\u00A0ukuleles brought\u00A0to\u00A0every\u00A0session" },
+  { number: "3\u20134", label: "chords\u00A0learned in\u00A0the\u00A0very\u00A0first\u00A0session" },
+  { number: "20+", label: "years\u00A0of\u00A0experience in\u00A0music\u00A0education" }
+],
   active: {
     heading: 'Active Music-Making instead of Passive Entertainment',
     paragraphs: [
