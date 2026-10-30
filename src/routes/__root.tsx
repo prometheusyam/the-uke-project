@@ -19,8 +19,8 @@ export const Route = createRootRoute({
       },
       {
         name: 'google-site-verification',
-        content: '<meta name="google-site-verification" content="BFRxHsVP4bNeAO3_SGfLjk4_WafJ3_J5NZr3nJPF1MU" />',
-      },
+        content: 'BFRxHsVP4bNeAO3_SGfLjk4_WafJ3_J5NZr3nJPF1MU' ,
+        },
       {
         title: siteName,
       },
