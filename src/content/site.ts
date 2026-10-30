@@ -33,9 +33,9 @@ export const home = {
   primaryCta: 'Get in touch',
   secondaryCta: 'See how the program works',
 stats: [
-  { number: "20", label: "concert\u00A0ukuleles brought\u00A0to\u00A0every\u00A0session" },
-  { number: "3\u20134", label: "chords\u00A0learned in\u00A0the\u00A0very\u00A0first\u00A0session" },
-  { number: "20+", label: "years\u00A0of\u00A0experience in\u00A0music\u00A0education" }
+  { value: '20', label: 'concert\u00A0ukuleles brought\u00A0to\u00A0every\u00A0session' },
+  { value: '3\u20134', label: 'chords\u00A0learned in\u00A0the\u00A0very\u00A0first\u00A0session' },
+  { value: '20+', label: 'years\u00A0of\u00A0experience in\u00A0music\u00A0education' },
 ],
   active: {
     heading: 'Active Music-Making instead of Passive Entertainment',
